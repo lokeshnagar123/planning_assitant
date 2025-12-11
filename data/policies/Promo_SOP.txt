@@ -1,0 +1,4 @@
+Promotion SOP (Dairy)
+- Weekend promos capped at 12% for fresh dairy.
+- Avoid cannibalization across similar SKUs; stagger promos.
+- Require KPI evidence before markdown: margins, stockouts, forecast deltas.

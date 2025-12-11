@@ -1,0 +1,7 @@
+week,region,category,sku,forecast_units,actual_units
+2025-06-01,West,Dairy,SKU-001,1300,1200
+2025-06-01,West,Dairy,SKU-002,850,800
+2025-06-08,West,Dairy,SKU-001,1100,950
+2025-06-08,West,Dairy,SKU-002,780,700
+2025-06-15,West,Dairy,SKU-001,1050,1000
+2025-06-15,West,Dairy,SKU-002,750,720

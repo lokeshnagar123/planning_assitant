@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY app /app/app
+COPY ingest /app/ingest
+COPY infra /app/infra
+COPY data /app/data
+RUN pip install --no-cache-dir fastapi uvicorn httpx psycopg2-binary sqlalchemy pydantic streamlit requests
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,0 +1,4 @@
+OTB Policy (Dairy, West)
+- Maintain service level >= 95%.
+- Markdown floor must respect price ladder rules.
+- Promotions should not overlap more than 2 consecutive weekends.

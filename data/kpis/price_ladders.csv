@@ -1,0 +1,3 @@
+region,category,sku,reg_price,promo_price,markdown_floor
+West,Dairy,SKU-001,160,144,130
+West,Dairy,SKU-002,150,132,125

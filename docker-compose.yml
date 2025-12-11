@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: planning
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./infra/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      DB_URL: postgresql://postgres:postgres@db:5432/planning
+      OLLAMA_URL: http://host.docker.internal:11434
+      LLM_MODEL: llama3:8b
+      EMBED_MODEL: nomic-embed-text
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    environment:
+      API_URL: http://api:8000
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"

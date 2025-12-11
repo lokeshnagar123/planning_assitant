@@ -1,0 +1,4 @@
+Merchandising Playbook â€“ Dairy (West)
+- Use demand sensing signals (weather/events) to adjust short-term forecasts.
+- For stockouts risk, prefer DCâ†’store transfer before PO increase.
+- Always include citations (dataset + document) in planner notes.
